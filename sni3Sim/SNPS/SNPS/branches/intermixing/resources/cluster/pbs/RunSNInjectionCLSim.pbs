@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -l pmem=3000mb
+#PBS -l procs=2
+#PBS -l walltime=36:00:00
+#PBS -M benedikt.riedel@icecube.wisc.edu
+#PBS -m bea
+#PBS -N RunSNInjCLSim
+#PBS -o $HOME/logs/RunSNInjectionCLSim.${PBS_JOBID}.out
+#PBS -e $HOME/logs/RunSNInjectionCLSim.${PBS_JOBID}.err
+#PBS -t 1-1000
+
+metaproject=/home/briedel/Software/icesim/trunk_rev126251/build
+executable=$metaproject/SNPS/resources/injection/RunSNInjectionCLSimwPrunerTraySegment.py
+
+JOBID=`echo ${PBS_JOBID} | cut -c1-7`
+TASKID=`echo ${PBS_JOBNAME} | awk -F'-' '{print $2}'`
+echo PBS JOB ID ${PBS_JOBID}
+echo JOB ID ${JOBID}
+echo PBS TASK ID ${PBS_TASKNUM}
+echo TASK ID ${TASKID}
+echo "Starting run at: `date`"
+
+$metaproject/env-shell.sh python $executable -p 1000 -n 1000 -r ${JOBID} -s ${TASKID} -o $HOME/SNPSInjection_${PBS_JOBNAME}_${PBS_JOBID}.i3.bz2 -g $metaproject/SNPS/resources/GCD/GeoCalibDetectorStatus_IC86.55697_V2.i3.gz
+
+echo "Program SNInjection  finished with exit code $? at: `date`"

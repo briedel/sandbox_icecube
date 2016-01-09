@@ -1,0 +1,90 @@
+SNPS
+====
+A simulation framework to generate MeV-scale neutrino events in large volume 
+water/ice neutrino detector and apply statistical weights according to a given 
+theoretical core-collapse supernova flux model and oscillation scenario.
+
+Disclaimer
+----------
+This project is specific to the [IceCube neutrino telescope][icecube] 
+simulation and the following description contains lots of internal jargon. It 
+requires the [IceTray framework][icetray].
+
+Rationale
+---------
+The current supernova neutrino simulation in IceCube--USSR--uses a purely 
+statistical approach to determine a per DOM increase in the hit rate for a 
+given supernova model. This approach provides a fast and accurate estimate of 
+the detector response to the MeV neutrino wave produced in core-collapse 
+supernovae. It however falls short in providing an accurate estimate of the 
+backgrounds as well as any information on individual events. The comparatively 
+low energy of these events and the sparse instrumentation make it 
+computationally infeasible to simulate a variety of supernova signals and/or
+models by simply injecting a given signal into the [IceCube detector simulation 
+framework][icesim].
+
+SNPS aims to combine the advantages of using icesim and statistical approach 
+and overcome some of the disadvantages by generating a large sample of 
+MeV-scale neutrinos with a given spectrum and adjusting for a given supernova 
+model by calculating a statistical weight for each event. This statistical 
+weight compensates for the differences between theoretical models, while 
+generating a large sample will provide the means to study the events that 
+actually produce hits in the detectors. Moving the simulation into icesim makes 
+it feasible to use the most up-to-date detector information and use 
+pre-generated background data sets to add to the signal sample.
+
+Overview
+--------
+The first step is generating a substantial sample of MeV-scale neutrino 
+interactions with a known neutrino energy spectrum. The sample consists of 
+interacted neutrinos otherwise the sample would be unrealistically large.
+The neutrino interactions that do not generate a hit on a DOM are removed from 
+the sample to decrease storage needs. 
+
+Once the sample is generated, one can select a distance and theoretical model. 
+From these inputs, the required portion of the sample is calculated and removed
+from the larger sample. For each interaction that produces a hit, a 
+"generation" weight is calculated to compensate for the statistical difference
+between the selected sample and the expected signal from the supernova. 
+Additionally, a "oscillation" weight can be calculated to compensate for the 
+survivial probabilities of a given neutrino interaction. 
+
+The product of the "generation" and "oscillation" weight provides a statistcal 
+estimate of how likely it is that the given neutrino has been generated in the
+supernova, survived the oscillation process during travel, and interacted in 
+the detector.
+
+Basic usage
+-----------
+
+To inject a signal you should add the supplied "traysegment"--SNPSInjection--to 
+your icetray script:
+
+tray.AddSegment(SNPS.SNPSInjection, "Injection",
+                GCD=options.GCDFILE,
+                seed=options.SEED,
+                RunNumber=options.RUNNUMBER,
+                NumberParticles=options.NUMPARTICLES,
+                DoNotParallelize=False
+                )
+
+To apply a weight to a given sample, add the supplied "module"--
+SNPickEventsQueue-- to your icetray scipt:
+
+
+tray.AddModule("SNPickEventsQueue", "PickEvent",
+               NumParticlesinFrame=1000,
+               InjectionSpectrum="Gamma PDF",
+               GenParamAlpha=3.0,
+               GenParammE=15.0,
+               Distance=10000.*icetray.I3Units.parsec) 
+
+
+
+License
+-------
+All of the code is under the 
+[ISC (OpenBSD/BSD 2 Clause equivalent) license][license].
+
+[icecube]: http://icecube.wisc.edu
+[icetray]: http://code.icecube.wisc.edu/projects/icetray

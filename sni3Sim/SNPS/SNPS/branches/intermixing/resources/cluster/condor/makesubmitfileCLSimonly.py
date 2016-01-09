@@ -1,0 +1,23 @@
+def makesubmitfileCLSimOnly(SUBMITFILE, FEXECUTABLE, ENVSHELL, JOBNAME, LOGGINGDIR):
+    SUBMITFILE = open(SUBMITFILE,"w")
+    SUBMITFILE.write("Fexecutable= /usr/bin/python " + FEXECUTABLE + "\n")
+    SUBMITFILE.write("executable=" + ENVSHELL + "\n")
+    SUBMITFILE.write("Jobname=" + JOBNAME + "\n")
+    SUBMITFILE.write("\n")
+    SUBMITFILE.write("logdir=" + LOGGINGDIR + "\n")
+    SUBMITFILE.write("output=$(Jobname)$(Cluster).out\n")
+    SUBMITFILE.write("error=$(Jobname)$(Cluster).err\n")
+    SUBMITFILE.write("\n")
+    SUBMITFILE.write("universe=vanilla\n")
+    SUBMITFILE.write("JobNotification=never\n")
+    # SUBMITFILE.write("getenv=true")
+    # SUBMITFILE.write("request_cpus=" + str(options.CPU) + "\n")
+    # SUBMITFILE.write("request_memory=" + str(options.MEMORY) + "\n")
+    # SUBMITFILE.write("request_disk=" + str(options.DISK) + "\n")
+    SUBMITFILE.write("\n")
+    SUBMITFILE.write("Arguments=$(Fexecutable) -o $(OUTFILE) -i $(INFILE) -r $(STREAMNUM) -s $(Cluster)\n" )
+    SUBMITFILE.write("Queue")
+    SUBMITFILE.close()
+    
+if __name__ == "__main__":
+    makesubmitfile(options)

@@ -1,0 +1,109 @@
+PyrateBufferManager: 2011-09-08 19:21:43.407656:
+	CurrentAquiredBuffers: 0
+	ReturnBufferCount: 2751
+	CurrentAquiredBytes: 0
+
+jvm: 2011-09-08 19:21:43.407656:
+	MemoryStatistics: [289521472, 381288448]
+
+moniData: 2011-09-08 19:21:43.407656:
+	Depth: [0]
+	RecordsSent: [4]
+
+rdoutData: 2011-09-08 19:21:43.407656:
+	Depth: [0]
+	RecordsSent: [7]
+
+rdoutReq: 2011-09-08 19:21:43.407656:
+	TotalRecordsReceived: 233
+	RecordsReceived: [233]
+	BytesReceived: [14446]
+
+sender: 2011-09-08 19:21:43.407656:
+	NumReadoutRequestsReceived: 267
+	NumHitsReceived: 3922
+	NumReadoutsSent: 8
+	NumHitsCached: 0
+	NumHitsQueued: 508
+	NumReadoutRequestsQueued: 0
+
+snData: 2011-09-08 19:21:43.407656:
+	Depth: [0]
+	RecordsSent: [61]
+
+stringHit: 2011-09-08 19:21:43.407656:
+	Depth: [0]
+	RecordsSent: [4207]
+
+stringhub: 2011-09-08 19:21:43.407656:
+	TimeOfLastHitOutputFromHKN1: 216697059054602380
+	NumberOfActiveAndTotalChannels: [60, 60]
+	NumberOfActiveChannels: 60
+	TimeOfLastHitInputToHKN1: 216697060762200936
+	HitRateLC: 0.0
+	HitRate: 0.0
+	TotalLBMOverflows: 1108
+
+system: 2011-09-08 19:21:43.407656:
+	LoadAverage: [0.46999999999999997, 0.17999999999999999, 0.059999999999999998]
+	NetworkIO: {'lo_tx_errs': 0, 'eth1_rx_fifo': 0, 'eth2_rx_packets': 0, 'eth1_tx_compressed': 0, 'eth2_tx_compressed': 0, 'eth0_tx_fifo': 0, 'eth1_tx_packets': 0, 'lo_tx_compressed': 0, 'eth1_rx_compressed': 0, 'lo_rx_errs': 0, 'eth1_tx_fifo': 0, 'lo_tx_fifo': 0, 'eth0_tx_errs': 0, 'eth0_rx_multicast': 0, 'eth0_tx_carrier': 0, 'eth3_rx_compressed': 0, 'eth3_tx_drop': 0, 'lo_tx_drop': 0, 'eth2_rx_drop': 0, 'eth1_tx_drop': 0, 'eth3_rx_bytes': 0, 'eth3_tx_packets': 0, 'lo_rx_bytes': 12229908, 'eth2_rx_errs': 0, 'eth3_tx_errs': 0, 'eth0_rx_errs': 0, 'eth2_tx_errs': 0, 'lo_rx_packets': 105122, 'eth2_rx_compressed': 0, 'eth3_rx_packets': 0, 'eth0_tx_drop': 0, 'eth0_rx_frame': 0, 'eth1_tx_bytes': 0, 'eth1_rx_multicast': 0, 'eth1_rx_packets': 0, 'eth2_tx_fifo': 0, 'eth1_tx_errs': 0, 'eth2_tx_bytes': 0, 'eth3_rx_frame': 0, 'eth2_rx_frame': 0, 'eth1_rx_bytes': 0, 'eth0_rx_drop': 0, 'eth3_rx_drop': 0, 'eth1_rx_frame': 0, 'eth2_tx_packets': 0, 'eth0_tx_bytes': 781309055930, 'eth3_rx_errs': 0, 'eth0_rx_bytes': 353668144472, 'eth3_tx_compressed': 0, 'eth2_rx_fifo': 0, 'lo_tx_bytes': 12229908, 'eth1_rx_errs': 0, 'eth1_tx_carrier': 0, 'eth0_rx_packets': 1015654236, 'lo_rx_drop': 0, 'eth0_tx_compressed': 0, 'eth0_rx_fifo': 0, 'eth3_tx_colls': 0, 'eth0_tx_colls': 0, 'lo_tx_packets': 105122, 'eth2_rx_multicast': 0, 'eth2_tx_colls': 0, 'eth3_tx_fifo': 0, 'eth1_tx_colls': 0, 'lo_tx_carrier': 0, 'lo_rx_frame': 0, 'eth1_rx_drop': 0, 'lo_tx_colls': 0, 'eth3_tx_bytes': 0, 'lo_rx_fifo': 0, 'eth2_tx_drop': 0, 'eth3_tx_carrier': 0, 'eth3_rx_multicast': 0, 'eth0_rx_compressed': 0, 'eth2_rx_bytes': 0, 'eth2_tx_carrier': 0, 'eth0_tx_packets': 3003963471, 'lo_rx_multicast': 0, 'lo_rx_compressed': 0, 'eth3_rx_fifo': 0}
+	AvailableDiskSpace: {'/': 44489708, '/dev/shm': 24725760}
+
+tcalData: 2011-09-08 19:21:43.407656:
+	Depth: [0]
+	RecordsSent: [0]
+
+PyrateBufferManager: 2011-09-08 19:21:46.850281:
+	CurrentAquiredBuffers: 0
+	ReturnBufferCount: 6035
+	CurrentAquiredBytes: 0
+
+jvm: 2011-09-08 19:21:46.850281:
+	MemoryStatistics: [300298016, 381288448]
+
+moniData: 2011-09-08 19:21:46.850281:
+	Depth: [0]
+	RecordsSent: [128]
+
+rdoutData: 2011-09-08 19:21:46.850281:
+	Depth: [0]
+	RecordsSent: [15]
+
+rdoutReq: 2011-09-08 19:21:46.850281:
+	TotalRecordsReceived: 476
+	RecordsReceived: [476]
+	BytesReceived: [29512]
+
+sender: 2011-09-08 19:21:46.850281:
+	NumReadoutRequestsReceived: 495
+	NumHitsReceived: 6455
+	NumReadoutsSent: 15
+	NumHitsCached: 0
+	NumHitsQueued: 199
+	NumReadoutRequestsQueued: 0
+
+snData: 2011-09-08 19:21:46.850281:
+	Depth: [0]
+	RecordsSent: [181]
+
+stringHit: 2011-09-08 19:21:46.850281:
+	Depth: [0]
+	RecordsSent: [6963]
+
+stringhub: 2011-09-08 19:21:46.850281:
+	TimeOfLastHitOutputFromHKN1: 216697077048144864
+	NumberOfActiveAndTotalChannels: [60, 60]
+	NumberOfActiveChannels: 60
+	TimeOfLastHitInputToHKN1: 216697078541256228
+	HitRateLC: 0.0
+	HitRate: 0.0
+	TotalLBMOverflows: 1698
+
+system: 2011-09-08 19:21:46.850281:
+	LoadAverage: [0.75, 0.23999999999999999, 0.080000000000000002]
+	NetworkIO: {'lo_tx_errs': 0, 'eth1_rx_fifo': 0, 'eth2_rx_packets': 0, 'eth1_tx_compressed': 0, 'eth2_tx_compressed': 0, 'eth0_tx_fifo': 0, 'eth1_tx_packets': 0, 'lo_tx_compressed': 0, 'eth1_rx_compressed': 0, 'lo_rx_errs': 0, 'eth1_tx_fifo': 0, 'lo_tx_fifo': 0, 'eth0_tx_errs': 0, 'eth0_rx_multicast': 0, 'eth0_tx_carrier': 0, 'eth3_rx_compressed': 0, 'eth3_tx_drop': 0, 'lo_tx_drop': 0, 'eth2_rx_drop': 0, 'eth1_tx_drop': 0, 'eth3_rx_bytes': 0, 'eth3_tx_packets': 0, 'lo_rx_bytes': 12229908, 'eth2_rx_errs': 0, 'eth3_tx_errs': 0, 'eth0_rx_errs': 0, 'eth2_tx_errs': 0, 'lo_rx_packets': 105122, 'eth2_rx_compressed': 0, 'eth3_rx_packets': 0, 'eth0_tx_drop': 0, 'eth0_rx_frame': 0, 'eth1_tx_bytes': 0, 'eth1_rx_multicast': 0, 'eth1_rx_packets': 0, 'eth2_tx_fifo': 0, 'eth1_tx_errs': 0, 'eth2_tx_bytes': 0, 'eth3_rx_frame': 0, 'eth2_rx_frame': 0, 'eth1_rx_bytes': 0, 'eth0_rx_drop': 0, 'eth3_rx_drop': 0, 'eth1_rx_frame': 0, 'eth2_tx_packets': 0, 'eth0_tx_bytes': 781312450465, 'eth3_rx_errs': 0, 'eth0_rx_bytes': 353668885642, 'eth3_tx_compressed': 0, 'eth2_rx_fifo': 0, 'lo_tx_bytes': 12229908, 'eth1_rx_errs': 0, 'eth1_tx_carrier': 0, 'eth0_rx_packets': 1015661678, 'lo_rx_drop': 0, 'eth0_tx_compressed': 0, 'eth0_rx_fifo': 0, 'eth3_tx_colls': 0, 'eth0_tx_colls': 0, 'lo_tx_packets': 105122, 'eth2_rx_multicast': 0, 'eth2_tx_colls': 0, 'eth3_tx_fifo': 0, 'eth1_tx_colls': 0, 'lo_tx_carrier': 0, 'lo_rx_frame': 0, 'eth1_rx_drop': 0, 'lo_tx_colls': 0, 'eth3_tx_bytes': 0, 'lo_rx_fifo': 0, 'eth2_tx_drop': 0, 'eth3_tx_carrier': 0, 'eth3_rx_multicast': 0, 'eth0_rx_compressed': 0, 'eth2_rx_bytes': 0, 'eth2_tx_carrier': 0, 'eth0_tx_packets': 3003975338, 'lo_rx_multicast': 0, 'lo_rx_compressed': 0, 'eth3_rx_fifo': 0}
+	AvailableDiskSpace: {'/': 44489708, '/dev/shm': 24725760}
+
+tcalData: 2011-09-08 19:21:46.850281:
+	Depth: [0]
+	RecordsSent: [0]

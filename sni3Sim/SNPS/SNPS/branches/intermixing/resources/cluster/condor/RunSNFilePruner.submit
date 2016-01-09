@@ -1,0 +1,13 @@
+Fexecutable= /usr/bin/python $I3_BUILD/SNPS/resources/SNFilePruner_examplescript.py
+executable=/net/user/briedel/Software/icesim/trunk/build_SNPS_newtime_caching/env-shell.sh
+Jobname=runCLSim
+
+logdir=/net/user/briedel/logs/
+output=$(Jobname)$(Cluster).out
+error=$(Jobname)$(Cluster).err
+
+universe=vanilla
+JobNotification=never
+
+Arguments=$(Fexecutable) $(INFILE)
+Queue
